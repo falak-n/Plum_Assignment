@@ -125,6 +125,31 @@ The `.gitignore` file already excludes:
 - Firefox (latest)
 - Safari (latest)
 
+## Architecture & Code Structure
+
+### Component Structure
+- **`App.jsx`**: Main navigation and state management for multi-screen flow
+- **`Screen1Input.jsx`**: Free-text input screen for health concerns
+- **`Screen2Classification.jsx`**: AI classification with loading indicator
+- **`Screen3Benefits.jsx`**: Benefit cards display based on category
+- **`Screen4ActionPlan.jsx`**: AI-generated action plan screen with regenerate option
+
+### Services
+- **`services/aiService.js`**: Gemini API integration with error handling and fallbacks
+
+### Data
+- **`data/benefits.json`**: Mock benefits data organized by categories
+
+### Key Features of Architecture
+- ✅ Multi-screen flow with smooth navigation
+- ✅ AI-powered classification using Google Gemini 2.5 Flash
+- ✅ Loading indicators during AI processing
+- ✅ Benefit cards with coverage and descriptions
+- ✅ AI-generated 3-step action plans
+- ✅ Regenerate option for action plans
+- ✅ Error handling and fallback responses
+- ✅ Clean, formal UI with Tailwind CSS
+
 ## How It Works
 
 ### Classification Process
@@ -140,6 +165,11 @@ The `.gitignore` file already excludes:
 1. User selects a benefit
 2. AI generates a personalized 3-step action plan
 3. Steps are specific to the benefit and category
+
+## Known Issues & Future Improvements
+
+- Occasionally misclassifies when input is vague
+- Next improvement: Add clarifying question fallback for ambiguous inputs
 
 ## Contributing
 
@@ -159,39 +189,4 @@ For issues or questions:
 ---
 
 **Made with ❤️ for better employee benefits access**
-- Provides regenerate option for users
-
-## Architecture & Code Structure
-
-- **`App.tsx`**: Main navigation and state management
-- **`Screen1Input.tsx`**: Free-text input screen
-- **`Screen2Classification.tsx`**: AI classification with loading indicator
-- **`Screen3Benefits.tsx`**: Benefit cards display
-- **`Screen4ActionPlan.tsx`**: AI-generated action plan screen
-- **`services/aiService.ts`**: Gemini API integration with error handling
-- **`data/benefits.json`**: Mock benefits data
-
-## Features
-
-- ✅ Multi-screen flow with smooth navigation
-- ✅ AI-powered classification using Google Gemini
-- ✅ Loading indicators during AI processing
-- ✅ Benefit cards with coverage and descriptions
-- ✅ AI-generated 3-step action plans
-- ✅ Regenerate option for action plans
-- ✅ Error handling and fallback responses
-- ✅ Clean, formal UI with Tailwind CSS
-
-## Known Issues / Improvements
-
-- Occasionally misclassifies when input is vague
-- Next improvement: Add clarifying question fallback for ambiguous inputs
-
-## Tech Stack
-
-- **Vite**: Build tool and dev server
-- **React 18**: UI framework
-- **TypeScript**: Type safety
-- **Tailwind CSS**: Styling
-- **Google Gemini API**: AI classification and action plan generation
 
