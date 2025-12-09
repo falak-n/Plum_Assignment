@@ -16,7 +16,7 @@ A React-based web application that helps employees understand and access their h
 
 ## Tech Stack
 
-- **Frontend**: React 18 + TypeScript
+- **Frontend**: React 18
 - **Build Tool**: Vite
 - **Styling**: Tailwind CSS
 - **AI Integration**: Google Gemini API (gemini-1.5-flash)
@@ -81,7 +81,7 @@ src/
 ## Available Scripts
 
 - `npm run dev` - Start development server
-- `npm run build` - Build for production (TypeScript + Vite)
+- `npm run build` - Build for production
 - `npm run preview` - Preview production build
 
 ## Usage
