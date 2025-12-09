@@ -1,5 +1,5 @@
 const GEMINI_API_KEY = import.meta.env.VITE_GEMINI_API_KEY || '';
-const GEMINI_MODEL = 'gemini-2.5-flash'; // or 'gemini-1.5-pro' for better quality
+const GEMINI_MODEL = 'gemini-2.5-flash'; // or 'gemini-2.5-pro' for better quality
 const GEMINI_API_URL = `https://generativelanguage.googleapis.com/v1/models/${GEMINI_MODEL}:generateContent`;
 
 export const classifyHealthNeed = async (userInput) => {

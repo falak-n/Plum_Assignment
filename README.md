@@ -19,7 +19,7 @@ A React-based web application that helps employees understand and access their h
 - **Frontend**: React 18
 - **Build Tool**: Vite
 - **Styling**: Tailwind CSS
-- **AI Integration**: Google Gemini API (gemini-1.5-flash)
+- **AI Integration**: Google Gemini API (gemini-2.5-flash)
 - **Package Manager**: npm
 - **Routing**: React Router v6
 
@@ -28,16 +28,16 @@ A React-based web application that helps employees understand and access their h
 ```
 src/
 ├── components/
-│   ├── Screen1Input.tsx          # User input screen
-│   ├── Screen2Classification.tsx # Health need classification
-│   ├── Screen3Benefits.tsx       # Benefits display
-│   └── Screen4ActionPlan.tsx     # Action plan generation
+│   ├── Screen1Input.jsx          # User input screen
+│   ├── Screen2Classification.jsx # Health need classification
+│   ├── Screen3Benefits.jsx       # Benefits display
+│   └── Screen4ActionPlan.jsx     # Action plan generation
 ├── services/
-│   └── aiService.ts             # Google Gemini API integration
+│   └── aiService.js             # Google Gemini API integration
 ├── data/
 │   └── benefits.json            # Benefits data
-├── App.tsx                       # Main app component
-├── main.tsx                      # Entry point
+├── App.jsx                       # Main app component
+├── main.jsx                      # Entry point
 └── index.css                     # Global styles
 ```
 
@@ -100,7 +100,7 @@ The app uses the **Google Generative AI (Gemini) API** for:
 ### API Configuration
 
 - **Base URL**: `https://generativelanguage.googleapis.com/v1/models/`
-- **Model**: `gemini-1.5-flash` (optimized for speed)
+- **Model**: `gemini-2.5-flash` (optimized for speed and intelligence)
 - **Authentication**: API key in header and query parameter
 
 ## Environment Variables
