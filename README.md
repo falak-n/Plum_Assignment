@@ -52,8 +52,8 @@ src/
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/falak-n/Plum_Ass.git
-   cd Plum_Ass
+   git clone https://github.com/falak-n/Plum.git
+   cd Plum
    ```
 
 2. **Install dependencies**
