@@ -1,4 +1,4 @@
-# Plum_Ass - Employee Benefits Assistant
+# Plum_Assignment - Employee Benefits Assistant
 
 A React-based web application that helps employees understand and access their health benefits using AI-powered classification and personalized action plans.
 
@@ -109,15 +109,6 @@ The app uses the **Google Generative AI (Gemini) API** for:
 |----------|-------------|
 | `VITE_GEMINI_API_KEY` | Google Gemini API key for authentication |
 
-## Important Security Notes
-
-⚠️ **Never commit your `.env` file to version control!**
-
-The `.gitignore` file already excludes:
-- `.env`
-- `.env.local`
-- `node_modules/`
-- `dist/`
 
 ## Browser Compatibility
 
@@ -165,28 +156,28 @@ The `.gitignore` file already excludes:
 1. User selects a benefit
 2. AI generates a personalized 3-step action plan
 3. Steps are specific to the benefit and category
-
-## Known Issues & Future Improvements
-
-- Occasionally misclassifies when input is vague
-- Next improvement: Add clarifying question fallback for ambiguous inputs
-
-## Contributing
-
-Feel free to submit issues and enhancement requests!
-
-## License
-
-This project is open source and available under the MIT License.
-
-## Support
-
-For issues or questions:
-1. Check existing GitHub issues
-2. Create a new issue with detailed description
-3. Include error messages and screenshots if applicable
-
 ---
 
 **Made with ❤️ for better employee benefits access**
+- Provides regenerate option for users
+
+
+## Features
+
+- ✅ Multi-screen flow with smooth navigation
+- ✅ AI-powered classification using Google Gemini
+- ✅ Loading indicators during AI processing
+- ✅ Benefit cards with coverage and descriptions
+- ✅ AI-generated 3-step action plans
+- ✅ Regenerate option for action plans
+- ✅ Error handling and fallback responses
+- ✅ Clean, formal UI with Tailwind CSS
+
+## Tech Stack
+
+- **Vite**: Build tool and dev server
+- **React 18**: UI framework
+- **TypeScript**: Type safety
+- **Tailwind CSS**: Styling
+- **Google Gemini API**: AI classification and action plan generation
 
